@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>机器学习 F1-Score, recall, precision | TiancaiNan</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://lzn112.github.io/favicon.ico?v=1729085473392">
+<link rel="stylesheet" href="https://lzn112.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="Acc=Npre/Ntotal
+true positive (TP)​ pre = 1 true =1
+false positive (FP) pre = 1 true = -1
+false negative (FN) pre = -1 t..." />
+    <meta name="keywords" content="study" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://lzn112.github.io">
+        <img src="https://lzn112.github.io/images/avatar.png?v=1729085473392" class="site-logo">
+        <h1 class="site-title">TiancaiNan</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://lzn112.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      绝不摆烂
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://lzn112.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">机器学习 F1-Score, recall, precision</h2>
+            <div class="post-date">2024-09-08</div>
+            
+            <div class="post-content" v-pre>
+              <p>Acc=Npre/Ntotal</p>
+<p>true positive (TP)​ pre = 1 true =1<br>
+false positive (FP) pre = 1 true = -1<br>
+false negative (FN) pre = -1 true = 1<br>
+true negative (TN) pre = -1 true =-1</p>
+<p>预测正确数： Npre = TP+TN<br>
+总的预测数： Ntotal = TP + TN + FP + FN</p>
+<ul>
+<li>Acc= TP+TN/TP+TN+FP+FN = TP+TN/P+N</li>
+</ul>
+<p>​- Recall= TP/TP+FN = TP/P<br>
+召回率就真样本被成功预测（召回）的比例<br>
+表现对正样本的识别能力</p>
+<ul>
+<li>Precision= TP/TP+FP<br>
+Precision就是预测的正样本中真实的比例<br>
+表现对负样本的识别能力</li>
+</ul>
+<p>F1= 2TP/2TP+FN+FP = 2⋅Precision⋅Recall/Precision+Recall</p>
+<p>​</p>
+<p>​</p>
+<p>​</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://lzn112.github.io/tag/30J6tVIIg/" class="tag">
+                    study
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://lzn112.github.io/post/change-need-time/">
+                  <h3 class="post-title">
+                    Change Need Time
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
